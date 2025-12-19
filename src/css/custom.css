@@ -1,0 +1,89 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #F1A309;
+  --ifm-color-primary-dark: #D99308;
+  --ifm-color-primary-darker: #C18407;
+  --ifm-color-primary-darkest: #A97506;
+  --ifm-color-primary-light: #F3B31A;
+  --ifm-color-primary-lighter: #F5C32B;
+  --ifm-color-primary-lightest: #F7D43C;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #F1A309;
+  --ifm-color-primary-dark: #D99308;
+  --ifm-color-primary-darker: #C18407;
+  --ifm-color-primary-darkest: #A97506;
+  --ifm-color-primary-light: #F3B31A;
+  --ifm-color-primary-lighter: #F5C32B;
+  --ifm-color-primary-lightest: #F7D43C;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.markdown summary{
+  padding: 0;
+}
+
+.markdown details {
+  background: transparent;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: none;
+  padding: 0;
+  transition: box-shadow 200ms ease, border-color 200ms ease, background-color 200ms ease;
+}
+
+.markdown details > summary {
+  font-size: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+/* Hide default marker across browsers */
+.markdown details > summary::before {
+  display: none;
+}
+
+/* Custom right-side arrow */
+.markdown details > summary::after {
+  content: "▸";
+  font-size: 2.0rem;
+  color: var(--ifm-color-emphasis-700);
+  transition: transform 200ms ease;
+  margin-right: 2.0rem;
+}
+
+.markdown details[open] > summary::after {
+  font-size: 2.0rem;
+  content: "▾";
+  transform: rotate(120deg);
+  margin-right: 2.0rem;
+}
+
+div.collapsibleContent_i85q {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0 15px;
+}
+
+/* Collapsed hover glow inspired by homepage cards */
+.markdown details:not([open]):hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 20px rgba(241, 163, 9, 0.20);
+}
+
+/* Dark theme: slightly stronger glow for contrast */
+[data-theme="dark"] .markdown details:not([open]):hover {
+  box-shadow: 0 0 20px rgba(241, 163, 9, 0.30);
+}
