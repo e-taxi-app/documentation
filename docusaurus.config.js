@@ -21,8 +21,8 @@ const config = {
   // projectName: 'e-Taxi', // Your repository name 
 
   url: 'https://e-taxi-app.github.io',
-  baseUrl: '/', ///For local uncomment this
- // baseUrl: '/documentation/', // For production Uncomment this
+ // baseUrl: '/', ///For local uncomment this
+ baseUrl: '/documentation/', // For production Uncomment this
   organizationName: 'e-taxi-app',
   projectName: 'documentation',
   trailingSlash: true,
