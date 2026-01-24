@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "e-Taxi Documentation",
-  tagline: "Documentation for e-Taxi Admin Panel, Mobile App, and Web",
+  title: "eTaxi Documentation",
+  tagline: "Documentation for eTaxi Admin Panel, Mobile App, and Web",
   favicon: "images/logo/favicon.png",
 
   // Set the production url of your site here
@@ -67,9 +67,9 @@ const config = {
       // Replace with your project's social card
       image: "images/logo/favicon.png",
       navbar: {
-        title: "e-Taxi",
+        title: "eTaxi",
         logo: {
-          alt: "e-Taxi Logo",
+          alt: "eTaxi Logo",
           src: "images/logo/favicon.png",
         },
         items: [
