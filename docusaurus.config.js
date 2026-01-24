@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "eTaxi Documentation",
-  tagline: "Documentation for e-Taxi Admin Panel, Mobile App, and Web",
+  tagline: "Documentation for eTaxi Admin Panel, Mobile App, and Web",
   favicon: "images/logo/favicon.png",
 
   // Set the production url of your site here
