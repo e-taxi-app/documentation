@@ -50,7 +50,7 @@ const sidebars = {
         "mobile-app/google-signin",
         "mobile-app/apple-signin",
         "mobile-app/notification-fcm",
-        "mobile-app/deep-link",
+        // "mobile-app/deep-link",
         "mobile-app/google-map",
         "mobile-app/integrate-admin-panel",
         "mobile-app/change-app-logo",
