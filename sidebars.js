@@ -34,7 +34,7 @@ const sidebars = {
       items: [
         "admin-panel-config/general-settings",
         // "admin-panel-config/webhook-configuration",
-        "admin-panel-config/MSG91-setups",
+        // "admin-panel-config/MSG91-setups",
       ],
     },
     {
