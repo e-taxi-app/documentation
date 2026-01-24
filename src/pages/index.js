@@ -124,7 +124,7 @@ function HomepageFeatures() {
               </div>
               <div className="card__body">
                 <p>
-                  Explore the powerful and flexible features that make e-Taxi
+                  Explore the powerful and flexible features that make eTaxi
                   a complete solution for your needs.
                 </p>
               </div>
@@ -158,7 +158,7 @@ function HomepageFeatures() {
               <div className="card__body">
                 <p>
                   Track all updates, improvements, and changes across the
-                  e-Taxi platform.
+                  eTaxi platform.
                 </p>
               </div>
               <div className="card__footer">
