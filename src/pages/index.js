@@ -59,7 +59,7 @@ function HomepageFeatures() {
               <div className="card__body">
                 <p>
                   Comprehensive admin panel with powerful features for managing
-                  your e-Taxi application.
+                  your eTaxi application.
                 </p>
               </div>
               <div className="card__footer">
