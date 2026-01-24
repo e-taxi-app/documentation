@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Support
 
-If you have any questions or need assistance with e-Taxi, please don't hesitate to reach out to our support team.
+If you have any questions or need assistance with eTaxi, please don't hesitate to reach out to our support team.
 
 ## Support Resources
 
@@ -16,7 +16,7 @@ If you have any questions or need assistance with e-Taxi, please don't hesitate 
 
 - **Email:** [support@wrteam.in](mailto:support@wrteam.in)
 - **Support Hours:** Monday to Friday, 9:00 AM to 6:00 PM (IST)
-- **Customer Support Head for e-Taxi:** 
+- **Customer Support Head for eTaxi:** 
 <!-- [Ishit Tanna](https://teams.live.com/l/invite/FEAHKrGHpchHDMkXgE) -->
 
 ## Support Policy

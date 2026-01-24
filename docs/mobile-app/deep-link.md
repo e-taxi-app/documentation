@@ -6,7 +6,7 @@ sidebar_position: 11
 
 > **Important:** If you are using website then use website URL everywhere in deeplink URL settings, but if you use only admin panel then use everywhere admin panel URL in deeplink URL settings. Please do not use http or https anywhere in deep link settings.
 
-1. Go to admin panel settings -> deep link scheme and add your scheme name (e.g., `e-taxi`)
+1. Go to admin panel settings -> deep link scheme and add your scheme name (e.g., `etaxi`)
 
    ![Native Link 4](/images/app/nativeLink4.png)
 

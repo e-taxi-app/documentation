@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# How to Connect Firebase with your Web e-Taxi
+# How to Connect Firebase with your Web eTaxi
 
 1. **Create firebase project in your account**
 

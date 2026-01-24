@@ -14,4 +14,4 @@ sidebar_position: 1
 
 ## System Requirements
 
-**PHP Version:** e-Taxi Admin panel is built using **Laravel Framework 10.0** so you need PHP version **minimum 8.2 or higher version** installed on your server.
+**PHP Version:** eTaxi Admin panel is built using **Laravel Framework 10.0** so you need PHP version **minimum 8.2 or higher version** installed on your server.

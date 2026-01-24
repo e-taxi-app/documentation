@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# e-Taxi Features & Setup Flow
+# eTaxi Features & Setup Flow
 
 ## 1. What Admin Needs to Do First
 
@@ -48,7 +48,7 @@ Before users and drivers can access the full functionality, complete these essen
 
 ## 2. Fare Calculation Methodology
 
-The e-Taxi platform uses a comprehensive fare calculation system that considers multiple factors:
+The eTaxi platform uses a comprehensive fare calculation system that considers multiple factors:
 
 **Base Fare:** Fixed amount charged at trip start (varies by city and ride type)
 
@@ -184,7 +184,7 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 ---
 
-## 7. e-Taxi Feature Set
+## 7. eTaxi Feature Set
 
 ### 🔧 Admin Panel Functionalities
 
@@ -263,4 +263,4 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 ---
 
-This setup guide ensures administrators can properly configure the e-Taxi platform before launching to users and drivers. Complete each section in order for smooth operations.
+This setup guide ensures administrators can properly configure the eTaxi platform before launching to users and drivers. Complete each section in order for smooth operations.

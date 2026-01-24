@@ -6,7 +6,7 @@ sidebar_position: 3
 
 For detailed information about package name structure and best practices, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/packagename).
 
-1. Unzip the downloaded code. After unzipping you will have e-Taxi - Flutter Code zip folder. Unzip that folder and open it in Android Studio or Visual Studio Code.
+1. Unzip the downloaded code. After unzipping you will have eTaxi - Flutter Code zip folder. Unzip that folder and open it in Android Studio or Visual Studio Code.
 
 2. Open ide terminal go to your project path and execute command
 

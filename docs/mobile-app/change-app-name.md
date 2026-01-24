@@ -4,7 +4,7 @@ sidebar_position: 15
 
 # Change App Name
 
-For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in image. Replace the selected e-Taxi text with your school name
+For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in image. Replace the selected eTaxi text with your school name
 
 ![Android App Name](/images/app/androidAppName.png)
 

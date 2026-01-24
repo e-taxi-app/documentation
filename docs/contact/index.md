@@ -17,4 +17,4 @@ We offer support from Monday to Friday, 9:00 AM to 6:00 PM IST (GMT +5:30). We a
 
 Typically we reply to all questions and queries within 24 hours via comments, support forum, or emails.
 
-Thank you for choosing e-Taxi!
+Thank you for choosing eTaxi!

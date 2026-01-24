@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Installation Steps
 
-This guide will walk you through the complete installation process of e-Taxi platform on your server.
+This guide will walk you through the complete installation process of eTaxi platform on your server.
 
 ## Prerequisites
 
@@ -17,17 +17,17 @@ Before starting the installation, ensure you have:
 - **Web Server** (Apache or Nginx)
 - **Required PHP Extensions** (see Server Requirements section below)
 
-**Note:** e-Taxi uses **Filament** (v3.3+) as the admin panel framework, which will be automatically installed via Composer.
+**Note:** eTaxi uses **Filament** (v3.3+) as the admin panel framework, which will be automatically installed via Composer.
 
 ## 1. Download and Extract Files
 
-Download the e-Taxi package and extract it to your web server directory (e.g., `htdocs`, `public_html`, or your domain folder).
+Download the eTaxi package and extract it to your web server directory (e.g., `htdocs`, `public_html`, or your domain folder).
 
 <!-- ![Extract Files](/images/admin/1.png) -->
 
 ## 2. Server Requirements & Extensions
 
-e-Taxi requires specific PHP extensions to function properly. The installation process will check for these requirements automatically.
+eTaxi requires specific PHP extensions to function properly. The installation process will check for these requirements automatically.
 
 ### Required PHP Extensions:
 
@@ -138,7 +138,7 @@ php artisan key:generate
 
 ## 7. Create Database
 
-First, create a MySQL database for e-Taxi. You can do this using phpMyAdmin, MySQL command line, or any database management tool.
+First, create a MySQL database for eTaxi. You can do this using phpMyAdmin, MySQL command line, or any database management tool.
 
 ### Using MySQL Command Line:
 ```sql
@@ -263,7 +263,7 @@ PAYTM_MERCHANT_KEY=your_paytm_merchant_key
 
 ## 14. Final Installation Screen
 
-If everything is configured successfully, your e-Taxi admin panel has been installed successfully!
+If everything is configured successfully, your eTaxi admin panel has been installed successfully!
 
 ### Access the Admin Panel
 
