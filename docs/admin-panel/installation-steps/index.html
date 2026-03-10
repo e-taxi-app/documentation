@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Installation Steps | eTaxi Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://e-taxi-app.github.io/documentation/images/logo/favicon.png"><meta data-rh="true" name="twitter:image" content="https://e-taxi-app.github.io/documentation/images/logo/favicon.png"><meta data-rh="true" property="og:url" content="https://e-taxi-app.github.io/documentation/docs/admin-panel/installation-steps/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Installation Steps | eTaxi Documentation"><meta data-rh="true" name="description" content="This guide will walk you through the complete installation process of eTaxi platform on your server."><meta data-rh="true" property="og:description" content="This guide will walk you through the complete installation process of eTaxi platform on your server."><link data-rh="true" rel="icon" href="/documentation/images/logo/favicon.png"><link data-rh="true" rel="canonical" href="https://e-taxi-app.github.io/documentation/docs/admin-panel/installation-steps/"><link data-rh="true" rel="alternate" href="https://e-taxi-app.github.io/documentation/docs/admin-panel/installation-steps/" hreflang="en"><link data-rh="true" rel="alternate" href="https://e-taxi-app.github.io/documentation/docs/admin-panel/installation-steps/" hreflang="x-default"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="/documentation/assets/css/styles.99b146e2.css">
-<script src="/documentation/assets/js/runtime~main.5251901a.js" defer="defer"></script>
+<script src="/documentation/assets/js/runtime~main.f49292f7.js" defer="defer"></script>
 <script src="/documentation/assets/js/main.5cff5231.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -13,7 +13,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
 <p>Before starting the installation, ensure you have:</p>
 <ul>
-<li><strong>PHP 8.2 or higher</strong> installed</li>
+<li><strong>PHP 8.4 or higher</strong> installed</li>
 <li><strong>Composer</strong> (PHP dependency manager) - Required to install Filament and other dependencies</li>
 <li><strong>Node.js &amp; NPM</strong> (version 16+ recommended) - Required for Filament asset compilation</li>
 <li><strong>MySQL/MariaDB Database Server</strong> (version 5.7+ or 10.3+)</li>
@@ -27,7 +27,7 @@
 <p>eTaxi requires specific PHP extensions to function properly. The installation process will check for these requirements automatically.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="required-php-extensions">Required PHP Extensions:<a href="#required-php-extensions" class="hash-link" aria-label="Direct link to Required PHP Extensions:" title="Direct link to Required PHP Extensions:">​</a></h3>
 <ul>
-<li><strong>PHP 8.2+</strong> (minimum version)</li>
+<li><strong>PHP 8.4+</strong> (minimum version)</li>
 <li><strong>PDO</strong> - PHP Data Objects</li>
 <li><strong>PDO_MySQL</strong> - MySQL database driver</li>
 <li><strong>OpenSSL</strong> - For secure connections</li>
@@ -43,7 +43,7 @@
 <li><strong>Curl</strong> - HTTP client</li>
 </ul>
 <p><strong>Note:</strong> The <strong>pdo_mysql</strong> extension is also required for database connectivity.</p>
-<p>If PHP version is lower than 8.2 or any extension is not installed, it will be highlighted in <strong>Red color</strong>. You need to ensure that your server meets all requirements before proceeding.</p>
+<p>If PHP version is lower than 8.4 or any extension is not installed, it will be highlighted in <strong>Red color</strong>. You need to ensure that your server meets all requirements before proceeding.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-install-dependencies">3. Install Dependencies<a href="#3-install-dependencies" class="hash-link" aria-label="Direct link to 3. Install Dependencies" title="Direct link to 3. Install Dependencies">​</a></h2>
 <p>Open your terminal/command prompt and navigate to the project directory, then run:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain"># Install PHP dependencies (this includes Filament admin panel)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">composer install</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># Install Node.js dependencies (required for Filament assets)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm install</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -186,7 +186,7 @@ Ensure the web server user has full control over these directories.</p>
 <li>
 <p><strong>Composer Install Fails</strong></p>
 <ul>
-<li>Check PHP version (must be 8.2+)</li>
+<li>Check PHP version (must be 8.4+)</li>
 <li>Verify all required PHP extensions are installed</li>
 <li>Check internet connection for package downloads</li>
 </ul>
