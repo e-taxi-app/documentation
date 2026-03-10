@@ -10,7 +10,7 @@ This guide will walk you through the complete installation process of eTaxi plat
 
 Before starting the installation, ensure you have:
 
-- **PHP 8.2 or higher** installed
+- **PHP 8.4 or higher** installed
 - **Composer** (PHP dependency manager) - Required to install Filament and other dependencies
 - **Node.js & NPM** (version 16+ recommended) - Required for Filament asset compilation
 - **MySQL/MariaDB Database Server** (version 5.7+ or 10.3+)
@@ -31,7 +31,7 @@ eTaxi requires specific PHP extensions to function properly. The installation pr
 
 ### Required PHP Extensions:
 
-- **PHP 8.2+** (minimum version)
+- **PHP 8.4+** (minimum version)
 - **PDO** - PHP Data Objects
 - **PDO_MySQL** - MySQL database driver
 - **OpenSSL** - For secure connections
@@ -48,7 +48,7 @@ eTaxi requires specific PHP extensions to function properly. The installation pr
 
 **Note:** The **pdo_mysql** extension is also required for database connectivity.
 
-If PHP version is lower than 8.2 or any extension is not installed, it will be highlighted in **Red color**. You need to ensure that your server meets all requirements before proceeding.
+If PHP version is lower than 8.4 or any extension is not installed, it will be highlighted in **Red color**. You need to ensure that your server meets all requirements before proceeding.
 
 <!-- ![Server Requirements](/images/admin/2.png) -->
 
@@ -335,7 +335,7 @@ php artisan websocket:serve --port=6001
    - Check if `pdo_mysql` extension is enabled in PHP
 
 3. **Composer Install Fails**
-   - Check PHP version (must be 8.2+)
+   - Check PHP version (must be 8.4+)
    - Verify all required PHP extensions are installed
    - Check internet connection for package downloads
 
