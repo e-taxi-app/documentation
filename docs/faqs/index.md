@@ -104,7 +104,7 @@ Yes, technical support is available via Microsoft Teams for 6 months after purch
 
 The product requires:
 
-- PHP version 8.2.0 or higher
+- PHP version 8.4.0 or higher
 - A VPS server with at least 3-4 GB of free space
 - MySQL for the database
 

@@ -38,9 +38,4 @@ For detailed information about package name structure and best practices, please
 
    ![Change iOS Package Name](/images/app/changePackageName1.png)
 
-6. Update package name in settings.dart
-   - Navigate to `lib/settings.dart` file
-   - Find the `packageName` variable
-   - Update it with your new package name
 
-   ![Update Package Name in Settings](/images/app/changePackageName2.png)

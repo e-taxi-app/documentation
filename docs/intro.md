@@ -29,14 +29,14 @@ Thank you for choosing eTaxi!
 
 ### For Backend (Admin Panel & API)
 
-1. **PHP Version:** eTaxi backend is built using **Laravel Framework 12.0**, so you need PHP version **minimum 8.2 or higher** installed on your server.
+1. **PHP Version:** eTaxi backend is built using **Laravel Framework 12.0**, so you need PHP version **minimum 8.4 or higher** installed on your server.
 2. **Database:** PostgreSQL with PostGIS extension (for spatial data support) or MySQL/MariaDB
 3. **Composer:** PHP dependency manager
 4. **Node.js & NPM:** Required because **Filament** uses Vite for compiling CSS and JavaScript assets. Filament requires Node.js for asset compilation during development and building production assets.
 
 ### For Mobile Application Development
 
-1. **Flutter Version:** Flutter stable channel **3.35.0** SDK version
+1. **Flutter Version:** Flutter stable channel **3.41.4** SDK version
 2. **Java Version:** JDK version **17** (for Android development)
 
 **Note:** You can use either a **VPS server** or **shared hosting** for the backend, depending on your requirements. For production environments with high traffic, a VPS server is recommended for better performance and control.

@@ -23,7 +23,7 @@ For a complete guide on setting up Flutter and Java JDK, please refer to our off
 
 ## Setup Flutter SDK
 
-1. Download Flutter SDK version 3.35.0 (stable channel) from the official Flutter website:
+1. Download Flutter SDK version 3.41.4 (stable channel) from the official Flutter website:
    [Flutter SDK Downloads](https://docs.flutter.dev/get-started/install)
 
 2. After downloading, extract the Flutter SDK to your desired location.
