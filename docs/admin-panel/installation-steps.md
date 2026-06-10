@@ -25,118 +25,7 @@ Download the eTaxi package and extract it to your web server directory (e.g., `h
 
 <!-- ![Extract Files](/images/admin/1.png) -->
 
-## 2. Server Requirements & Extensions
-
-eTaxi requires specific PHP extensions to function properly. The installation process will check for these requirements automatically.
-
-### Required PHP Extensions:
-
-- **PHP 8.4+** (minimum version)
-- **PDO** - PHP Data Objects
-- **PDO_MySQL** - MySQL database driver
-- **OpenSSL** - For secure connections
-- **Mbstring** - Multibyte string handling
-- **Tokenizer** - Token parsing
-- **XML** - XML processing
-- **Ctype** - Character type checking
-- **JSON** - JSON encoding/decoding
-- **BCMath** - Arbitrary precision mathematics
-- **Fileinfo** - File information
-- **GD** or **Imagick** - Image processing
-- **Zip** - Archive handling
-- **Curl** - HTTP client
-
-**Note:** The **pdo_mysql** extension is also required for database connectivity.
-
-If PHP version is lower than 8.4 or any extension is not installed, it will be highlighted in **Red color**. You need to ensure that your server meets all requirements before proceeding.
-
-<!-- ![Server Requirements](/images/admin/2.png) -->
-
-## 3. Install Dependencies
-
-Open your terminal/command prompt and navigate to the project directory, then run:
-
-```bash
-# Install PHP dependencies (this includes Filament admin panel)
-composer install
-
-# Install Node.js dependencies (required for Filament assets)
-npm install
-```
-
-**Note:** The `composer install` command will automatically install **Filament** (the admin panel framework) along with all other PHP dependencies. Filament is already included in the project's `composer.json` file.
-
-### Install Filament Admin Panel
-
-After installing dependencies, set up Filament:
-
-```bash
-# Install Filament admin panel (if not already installed)
-php artisan filament:install --panels
-
-# Or upgrade Filament to latest version
-php artisan filament:upgrade
-```
-
-This will:
-- Publish Filament configuration files
-- Set up the admin panel structure
-- Create necessary directories and assets
-
-## 4. Environment Configuration
-
-Copy the `.env.example` file to `.env`:
-
-```bash
-# On Linux/Mac
-cp .env.example .env
-
-# On Windows
-copy .env.example .env
-```
-
-Edit the `.env` file and configure the following:
-
-- **APP_NAME** - Your application name
-- **APP_ENV** - Environment (local, staging, production)
-- **APP_KEY** - Application encryption key (generate using `php artisan key:generate`)
-- **APP_DEBUG** - Debug mode (true for development, false for production)
-- **APP_URL** - Your application URL
-
-## 5. Permission Screen
-
-Make sure these folders have **read & write permissions**:
-
-- `storage/` - For logs, cache, and uploaded files
-- `storage/app/` - Application storage
-- `storage/framework/` - Framework cache and sessions
-- `storage/logs/` - Application logs
-- `bootstrap/cache/` - Bootstrap cache files
-
-### Setting Permissions:
-
-**On Linux/Mac:**
-```bash
-chmod -R 775 storage bootstrap/cache
-chown -R www-data:www-data storage bootstrap/cache
-```
-
-**On Windows:**
-Ensure the web server user has full control over these directories.
-
-If permissions are not set correctly, assign these folders read & write permissions before proceeding.
-
-<!-- ![Permission Screen](/images/admin/3.png) -->
-
-## 6. Generate Application Key
-
-Generate the application encryption key:
-
-```bash
-php artisan key:generate
-```
-
-## 7. Create Database
+## 2. Create Database
 
 First, create a MySQL database for eTaxi. You can do this using phpMyAdmin, MySQL command line, or any database management tool.
 
@@ -152,74 +41,110 @@ CREATE DATABASE etaxi_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 4. Select collation: `utf8mb4_unicode_ci`
 5. Click "Create"
 
-## 8. Database Configuration
+## 3. Installation Screen
 
-Configure your database connection in the `.env` file:
+Open the E-Taxi Installer in your browser:
 
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=etaxi_db
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+```
+http://your-domain.com/install
 ```
 
-**Note:** 
-- Replace `etaxi_db` with your actual database name
-- Replace `your_username` and `your_password` with your MySQL credentials
-- If using a remote database, update `DB_HOST` accordingly
+On the **Welcome** screen, the installer lists the information you will need before proceeding:
 
-<!-- ![Database Configuration](/images/admin/5.png) -->
+1. **App URL**
+2. **Database host**
+3. **Database port**
+4. **Database name**
+5. **Database username**
+6. **Database password**
 
-## 9. Database Connection Status
 
-Test your database connection:
+Click **Next step** to continue.
 
-```bash
-php artisan migrate:status
-```
+![Installation Welcome Screen](/images/admin/install-welcome.png)
 
-If the connection is successful, you'll see the migration status. If there are errors, verify your database credentials in the `.env` file.
+## 4. Server Requirements & Extensions
 
-<!-- ![Database Connection](/images/admin/6.png) -->
+The installer checks that your server meets the minimum requirements. **PHP 8.4 or higher** is required. Missing extensions must be installed or enabled before you can proceed.
 
-## 10. Run Database Migrations
+If PHP version is lower than 8.4 or any extension is not installed, it will be highlighted in **red**. Ensure your server meets all requirements before continuing.
 
-Create the database tables:
+If any check shows fail or missing, fix the server settings and refresh this page. Then click **Next**.
 
-```bash
-php artisan migrate
-```
+![Server Requirements & Extensions](/images/admin/install-server-requirements.png)
 
-## 11. Seed Database (Optional)
+## 5. Purchase Code Validation
 
-Populate the database with initial data:
+Enter your **CodeCanyon purchase code** to authorize this domain:
 
-```bash
-php artisan db:seed
-```
+- **Envato Username** — your Envato marketplace username
+- **Purchase Code** — format: `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`
 
-This will create:
-- Default admin user
-- Initial settings
-- Sample data (if seeders are configured)
+To find your purchase code, visit: [Where is My Purchase code?](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)
 
-## 12. Build Frontend Assets
+Click **Validate & Next** to continue.
 
-Compile the Filament admin panel assets. This step is essential for the admin panel to work correctly:
+![Purchase Code Validation](/images/admin/install-purchase-code.png)
 
-```bash
-# For development (with hot reload)
-npm run dev
+## 6. Database Configuration
 
-# For production (optimized build)
-npm run build
-```
+Provide your MySQL database credentials. These will be written into the `.env` file:
 
-**Important:** The Filament admin panel requires these assets to be compiled. Without this step, the admin panel interface will not load properly.
+- **DB Host** — e.g. `localhost` or `127.0.0.1`
+- **DB Port** — default `3306`
+- **DB Name** — your database name
+- **DB Username** — MySQL username with access to the database
+- **DB Password** — MySQL password
 
-## 13. Configure Additional Services
+If you are getting error in this step, check your database host,port,name user and password.
+
+Click **Save & Check** to verify the connection and continue.
+
+![Database Configuration](/images/admin/install-database-config.png)
+
+## 7. Database Connection Status
+
+After clicking **Save & Check**, the installer verifies your database connection. If the credentials are correct, you will see a **SUCCESS** message confirming that the database connection was successful.
+
+If the connection fails, go back and verify your database host, port, name, username, and password. Then click **Save & Check** again.
+
+Click **Next** to continue.
+
+![Database Connection Status](/images/admin/install-database-connection.png)
+
+## 8. Final Installation
+
+Set your **App URL** and **Super Admin** credentials. Email and password are saved to `.env` and created as the admin user in the database:
+
+- **App URL** — e.g. `https://your-domain.com`
+- **Admin Email** — super admin login email
+- **Admin Password** — super admin login password
+
+**Note:** Admin is saved with `role_id = 1`, Spatie admin role, and full permissions. Database tables must exist first (`php artisan migrate`).
+
+If admin save fails, run migrations on the server and submit this form again.
+
+Click **Finish Install** to complete setup.
+
+![Final Installation](/images/admin/install-final.png)
+
+## 9. Installation Completed
+
+If everything is configured successfully, you will see the **Installation Completed** screen.
+
+- **Website Address** — your live site URL
+- **Administration Area** — link to the admin panel login
+
+Default credentials (as set during installation):
+
+- **Email:** `admin@etaxi.com`
+- **Password:** `admin@123`
+
+Save these credentials safely before moving to admin login. Click **Go To Admin Login** to open the admin panel.
+
+![Installation Completed](/images/admin/install-completed.png)
+
+## 10. Configure Additional Services
 
 ### Pusher Configuration (for Real-time Features)
 
@@ -261,27 +186,7 @@ PAYTM_MERCHANT_ID=your_paytm_merchant_id
 PAYTM_MERCHANT_KEY=your_paytm_merchant_key
 ```
 
-## 14. Final Installation Screen
-
-If everything is configured successfully, your eTaxi admin panel has been installed successfully!
-
-### Access the Admin Panel
-
-Navigate to: `http://your-domain.com/admin`
-
-### Default Admin Credentials
-
-After running the database seeder, you can login with:
-
-- **Email:** admin@etaxi.com (or as configured in seeder)
-- **Password:** password (or as configured in seeder)
-
-**Important:** Change the default password immediately after first login!
-
-<!-- ![Installation Complete](/images/admin/7.png) -->
-<!-- ![Admin Login](/images/admin/8.png) -->
-
-## 15. Post-Installation Steps
+## 11. Post-Installation Steps
 
 ### Clear Cache
 
@@ -361,4 +266,3 @@ After successful installation:
 7. **Configure API Keys** - Set up Google Maps, FCM, and other services
 
 For detailed configuration guides, refer to other sections of this documentation.
-
