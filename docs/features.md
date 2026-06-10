@@ -77,7 +77,7 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 **Driver Earnings:** Total - Admin Commission (commission rate varies by city/ride type)
 
----
+<!-- ---
 
 ## 3. System Settings (Admin Panel)
 
@@ -99,9 +99,9 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 **Notification Settings:** Push/SMS/Email enabled/disabled
 
-**Integrations:** Google Analytics, social media links, third-party services
+**Integrations:** Google Analytics, social media links, third-party services -->
 
----
+<!-- ---
 
 ## 4. Web Settings (Admin Panel)
 
@@ -111,9 +111,9 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 **App Download Banners:** Enable/disable banners, Play Store/App Store links, banner images
 
----
+--- -->
 
-## 5. User Flow (App/Website)
+## 3. User Flow (App/Website)
 
 1. **Download App/Visit Website** - Play Store, App Store, or web
 
@@ -154,7 +154,7 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 ---
 
-## 6. Driver Flow (Driver App)
+## 4. Driver Flow (Driver App)
 
 1. **Download & Register** - Download app, register via Phone/Email/Google/Apple
 
@@ -184,7 +184,7 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 ---
 
-## 7. eTaxi Feature Set
+## 5. eTaxi Feature Set
 
 ### 🔧 Admin Panel Functionalities
 
@@ -233,7 +233,7 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 ---
 
-## 8. Technical Features
+## 6. Technical Features
 
 **Real-time:** WebSocket integration, live driver tracking, instant status updates, live chat
 
@@ -249,7 +249,7 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 ---
 
-## 9. Important Notes
+## 7. Important Notes
 
 **Driver Requirements:** Complete onboarding before going online, all documents approved, single device login, cannot match own user account
 

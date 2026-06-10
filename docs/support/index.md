@@ -16,7 +16,7 @@ If you have any questions or need assistance with eTaxi, please don't hesitate t
 
 - **Email:** [support@wrteam.in](mailto:support@wrteam.in)
 - **Support Hours:** Monday to Friday, 9:00 AM to 6:00 PM (IST)
-- **Customer Support Head for eTaxi:** 
+- **Whatsapp:** [+91 9712880093](https://wa.me/919712880093)
 <!-- [Ishit Tanna](https://teams.live.com/l/invite/FEAHKrGHpchHDMkXgE) -->
 
 ## Support Policy
