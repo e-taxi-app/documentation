@@ -4,16 +4,15 @@ sidebar_position: 22
 
 # Add Languages
 
- 1. Go to lib/core/localization/language Add the new your language dart file.
+New languages are added from the **Admin Panel**, not from the mobile app code.
 
-   ![Add Language 1](/images/app/addLanguage1.png)
+## Steps
 
+1. Login to the Admin Panel.
+2. Go to **Settings → Languages**.
+3. Click the **New Language** button (top right).
+4. Fill language details (Name, English name, Code, Country Code, RTL, Status).
+5. Save the language.
+6. If needed, use **Edit App Json** / **Edit Panel Json** to add translations for the mobile app and admin panel.
 
-   ![Add Language 1](/images/app/addLanguage2.png)
-
-
-   ![Add Language 2](/images/app/addLanguage3.png)
-
-   2. Go to lib/feature/account/pages/language_screen.dart 
-
-   ![Add Language 2](/images/app/addLanguage4.png)
+![Add Language from Admin](/images/admin/languages-admin.png)

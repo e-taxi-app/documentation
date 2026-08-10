@@ -7,7 +7,7 @@ sidebar_position: 12
 > ⚠️ **NOTE:** If you are using free map API, location data may not be accurate or complete. For accurate location data, it is **strongly recommended** to use place API key.
 
 1. Go to an .env file:
-2. For enabling billing and getting place API key, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase-billing)
+2. For enabling billing and getting place API key, please refer to our [comprehensive guide](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/firebase-billing)
 
 3. Copy place API key from Google Cloud Console and paste it into .env file as shown below:
 

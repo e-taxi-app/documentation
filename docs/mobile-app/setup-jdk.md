@@ -5,7 +5,7 @@ sidebar_position: 1
 # Flutter and Java JDK Setup Guide
 
 For a complete guide on setting up Flutter and Java JDK, please refer to our official documentation:
-[Flutter & Java JDK Setup Guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/basicsetup)
+[Flutter & Java JDK Setup Guide](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/basicsetup)
 
 ## Setup JDK in your system
 

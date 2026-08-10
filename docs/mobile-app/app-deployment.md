@@ -30,7 +30,7 @@ To deploy your app to the Apple App Store, you'll need to:
 
 ## Comprehensive Guide
 
-For detailed step-by-step instructions on deploying your app to either platform, please refer to our [Comprehensive Deployment Guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/deployment).
+For detailed step-by-step instructions on deploying your app to either platform, please refer to our [Comprehensive Deployment Guide](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/deployment).
 
 ## Important Notes
 

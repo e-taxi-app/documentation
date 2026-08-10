@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # How to change package name
 
-For detailed information about package name structure and best practices, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/packagename).
+For detailed information about package name structure and best practices, please refer to our [comprehensive guide](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/packagename).
 
 1. Unzip the downloaded code. After unzipping you will have eTaxi - Flutter Code zip folder. Unzip that folder and open it in Android Studio or Visual Studio Code.
 

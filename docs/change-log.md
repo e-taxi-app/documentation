@@ -10,7 +10,7 @@ Welcome to the eTaxi ChangeLog! This section documents all the important changes
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
-| 1.0.0          | 3.41.4         | 2.1.0        | 8.9.1       | 8.12                      | 17          |
+| 1.0.2          | 3.41.4         | 2.1.0        | 8.9.1       | 8.12                      | 17          |
 
 <!-- 
 #### New Features

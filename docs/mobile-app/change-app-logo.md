@@ -4,7 +4,7 @@ sidebar_position: 14
 
 # Change App Logo
 
-For a comprehensive guide on customizing your app's appearance, including detailed steps for changing the app logo and other branding elements, please refer to our [Comprehensive Guide to App Customization](https://wrteam-in.github.io/common_app_doc/GeneralSettings/appicon).
+For a comprehensive guide on customizing your app's appearance, including detailed steps for changing the app logo and other branding elements, please refer to our [Comprehensive Guide to App Customization](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/appicon).
 
 ## Add Logo Manually
 

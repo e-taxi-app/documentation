@@ -212,6 +212,16 @@ Total = Subtotal + Surge Amount + Tax Amount - Discount (if promo code applied)
 
 **System Management:** Document management, notifications, static pages, banners, API keys, maintenance mode, force update, authentication, admin roles/permissions
 
+**More Admin Features:**
+- **Multi-Language Support** — Add/manage languages from admin panel and set default language
+- **RTL Support** — Enable Right-to-Left layout for languages like Arabic
+- **Currency Settings** — Configure currency code, symbol, and display name
+- **Push Notifications** — Send FCM push notifications to all or selected customers and drivers
+- **MSG91 & WhatsApp OTP Login** — OTP login via Firebase, MSG91 SMS, or WhatsApp OTP
+- **App Version & Force Update** — Set Android/iOS app versions and force users to update
+- **Theme Colors** — Configure admin panel and mobile app primary theme colors
+- **Dynamic Integrations** — Manage Pusher and Google credentials dynamically from admin panel
+
 ---
 
 ### 📱 Mobile App & Web Features

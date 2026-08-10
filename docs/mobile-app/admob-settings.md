@@ -4,7 +4,7 @@ sidebar_position: 24
 
 # How to Enable/Disable and Admob Settings
 
-For a comprehensive guide on setting up Google AdMob, please refer to: [Google AdMob Setup Guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob)
+For a comprehensive guide on setting up Google AdMob, please refer to: [Google AdMob Setup Guide](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/advertisement/google-admob)
 
 1. If you want to disable google admob then you can disable from admin panel -> settings -> admob settings
 
