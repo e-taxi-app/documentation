@@ -14,7 +14,7 @@ For detailed information about Firebase Cloud Messaging (FCM) setup and configur
 
    ![FCM 2](/images/app/fcm_12.png)
 
-3. Now add your project id and downloaded service json file in .env file
+3. Now add your project id and downloaded service json file in add in your admin .env file
 
    ![FCM 3](/images/app/fcm4.png)
 

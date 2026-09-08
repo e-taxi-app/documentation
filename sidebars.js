@@ -59,7 +59,6 @@ const sidebars = {
         "mobile-app/asset-image",
         "mobile-app/change-country-code",
         "mobile-app/run-app",
-        "mobile-app/change-app-theme",
         "mobile-app/change-font",
         "mobile-app/add-language",
         "mobile-app/change-default-language",

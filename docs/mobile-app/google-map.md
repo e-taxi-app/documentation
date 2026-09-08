@@ -9,39 +9,48 @@ sidebar_position: 12
 1. Go to an .env file:
 2. For enabling billing and getting place API key, please refer to our [comprehensive guide](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/firebase-billing)
 
-3. Copy place API key from Google Cloud Console and paste it into .env file as shown below:
+3. **App:** Open the Flutter app `assets/.env` file and add your Android and iOS Google Maps API keys as shown below:
+
+   ```env
+   GOOGLE_MAPS_API_KEY_Android=YOUR_ANDROID_MAP_API_KEY
+   GOOGLE_MAPS_API_KEY_Ios=YOUR_IOS_MAP_API_KEY
+   ```
+
+   ![Map API Env](/images/app/mapAPI-env.png)
+
+4. Copy place API key from Google Cloud Console and paste it into admin .env file as shown below:
 
    ![Map API 9](/images/app/mapAPI9.png)
 
-4. Go to Google Cloud Platform. [Click here](https://cloud.google.com/)
+5. Go to Google Cloud Platform. [Click here](https://cloud.google.com/)
 
-5. Click on console.
+6. Click on console.
 
    ![Map API 1](/images/app/mapAPI1.png)
 
-6. Select your Firebase Project
+7. Select your Firebase Project
 
    ![Map API 2](/images/app/mapAPI2.png)
 
-7. Search for APIs, which are shown in below image.
+8. Search for APIs, which are shown in below image.
 
    ![Map API 3](/images/app/mapAPI3.png)
 
-8. Click on Enable to, enable that APIs
+9. Click on Enable to, enable that APIs
 
    ![Map API 4](/images/app/mapAPI4.png)
-9. Do above steps for the following APIs (enable each API one by one by searching):
+10. Do above steps for the following APIs (enable each API one by one by searching):
 
    - Maps SDK for Android
    - Maps SDK for iOS  
    - Geocoding API
    - Geolocation API
 
-10. Go to Credential Tab. You will find your Android and iOS API keys.
+11. Go to Credential Tab. You will find your Android and iOS API keys.
 
     ![Map API 6](/images/app/mapAPI6.png)
 
-11. You have to setup those above API keys for both Platform.
+12. You have to setup those above API keys for both Platform.
 
     ### Android Setup
 

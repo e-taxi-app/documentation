@@ -4,14 +4,24 @@ sidebar_position: 15
 
 # Change App Name
 
-For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in image. Replace the selected eTaxi text with your school name
+## Android
+
+Go to `android/app/src/main/AndroidManifest.xml` and change the app name in `android:label` as shown in the image. Replace `eTaxi` with your app name.
 
 ![Android App Name](/images/app/androidAppName.png)
 
-For IOS open this project in xcode and enter your app name in display name field as shown in image.
+## iOS
+
+Open this project in Xcode and enter your app name in the **Display Name** field as shown in the image.
 
 ![iOS App Name](/images/app/iosAppName.png)
 
-Change app name in lib -> utils -> constant.dart file as shown in image.
+## App Constants
 
-![App Name 2](/images/app/appName2.png)
+Also change the app name in `lib/utils/constants.dart` as shown in the image:
+
+```dart
+String appName = "eTaxi";
+```
+
+![App Name](/images/app/appName2.png)
