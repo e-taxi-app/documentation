@@ -4,7 +4,11 @@ sidebar_position: 13
 
 # Integrate with Admin Panel
 
-Go to lib/uils/api_constant.dart and replace the hostUrl with your admin panel URL. Make sure to include `https://` in the URL.
+Go to `lib/utils/api_constants.dart` and replace the `domain` value with your admin panel URL. Make sure to include `https://` in the URL.
+
+```dart
+static const String domain = "ENTER YOUR BASE URL HERE";
+```
 
 ![Change Database URL](/images/app/changeDatabaseUrl.png)
 
