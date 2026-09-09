@@ -26,7 +26,7 @@ For detailed information about package name structure and best practices, please
    Execute this command in your terminal
 
    ```bash
-   flutter pub run change_app_package_name:main your_new_package_name
+   dart run change_app_package_name:main <NEW_NAME_GOES_HERE>
    ```
    
    > **Important Note:** Replace `your_new_package_name` with your desired package name (e.g., `com.yourcompany.appname`). The package name should follow the reverse domain name notation.
